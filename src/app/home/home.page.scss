@@ -1,0 +1,278 @@
+ion-content {
+  --background: #e6e6e6;
+}
+
+ion-toolbar ion-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.stats-card {
+  margin: 0 0 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+
+  ion-card-header {
+    padding-bottom: 4px;
+
+    ion-card-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
+
+.stat-box {
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+  color: var(--ion-color-light);
+
+  .stat-number {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    margin: 4px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.stat-total {
+  background: var(--ion-color-secondary-shade);
+}
+
+.stat-male {
+  background: var(--ion-color-primary-shade);
+}
+
+.stat-female {
+  background: var(--ion-color-tertiary-shade);
+}
+
+ion-searchbar {
+  --border-radius: 10px;
+  --box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 0 8px;
+}
+
+.segment-bar {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: var(--ion-color-light);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.result-count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 8px;
+
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  ion-chip {
+    --padding-start: 8px;
+    --padding-end: 8px;
+    height: 26px;
+    font-size: 12px;
+  }
+}
+
+.student-list {
+  background: transparent;
+  padding: 0;
+}
+
+.student-card {
+  margin: 0 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-card-content {
+    padding: 8px 12px;
+  }
+}
+
+.student-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.student-info {
+  flex: 1;
+  padding-left: 12px;
+
+  .student-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 2px;
+    color: var(--ion-color-dark);
+  }
+
+  .student-course {
+    font-size: 11px;
+    color: var(--ion-color-medium);
+    margin: 0 0 6px;
+  }
+}
+
+.badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge-gender {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 6px;
+}
+
+.badge-year {
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--ion-color-secondary);
+}
+
+.student-id {
+  align-self: flex-start;
+  padding-top: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.2s ease;
+}
+
+.detail-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.2s ease;
+}
+
+.detail-header-male,
+.detail-header-female {
+  padding: 24px 20px 20px;
+  text-align: center;
+
+  ion-card-title,
+  ion-card-subtitle {
+    color: #fff;
+  }
+}
+
+.detail-header-male {
+  background: var(--ion-color-primary);
+}
+
+.detail-header-female {
+  background: var(--ion-color-tertiary);
+}
+
+.detail-name {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  margin-bottom: 4px;
+}
+
+.detail-id {
+  font-size: 13px !important;
+  opacity: 0.85;
+}
+
+.detail-content {
+  padding: 0 !important;
+
+  ion-list {
+    background: transparent;
+    margin-bottom: 0;
+  }
+
+  ion-item {
+    --padding-start: 16px;
+
+    ion-label {
+      p {
+        font-size: 11px;
+        color: var(--ion-color-medium);
+        margin: 2px 0;
+      }
+
+      h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.detail-actions {
+  padding: 16px;
+
+  ion-button {
+   --border-radius: 12px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.detail-avatar {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 12px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  object-fit: cover;
+}
